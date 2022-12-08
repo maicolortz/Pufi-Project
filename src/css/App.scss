@@ -1,0 +1,95 @@
+//variables
+$negro_transparente_gradiente:linear-gradient(180deg, rgba(0, 45, 48, 0.849) 0%, rgba(0, 45, 48, 0.849) 5%, rgba(0, 213, 255, 0) 100%) ;
+$blanco_claro:rgba(255, 255, 255, 0.678);
+@mixin borders {
+    border-right: 1px solid $blanco_claro;
+}
+@mixin quitarbordes {
+    border: 0px ;
+}
+.Portada{
+    width: 100vw;
+    justify-content: space-around;
+    background-image: url("../images/playa-portada.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:  bottom;
+    text-align: center;
+   
+    .navBar{
+        background: $negro_transparente_gradiente;
+        display: flex;
+        height: 5rem;
+        padding: 2rem ;
+
+        justify-content: space-between;
+        .navBar_item{
+            display: flex;
+            justify-content: center;
+        }
+        .navBar_item:first-child{
+            h1,h6{
+                text-align: center;
+                margin-top: 0%;
+
+
+            }
+        } 
+        .navBar_item:nth-child(3){
+            h5{
+                padding: 0px 0.5rem;
+            }
+            h5:nth-child(1){
+
+                height: max-content;
+                border-right: 1px solid $blanco_claro;
+            }
+        }       
+        .navBar_item_seccion{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* border-right: 1px solid #ffffff7a; */
+            @include borders;
+        
+            padding: 0px 5px;
+            
+            img{
+                height: 2rem;
+            }
+            h1{
+                font-size: 1rem;
+            }
+        }
+        .navBar_item_seccion:nth-child(4){
+            @include quitarbordes;
+        }
+       
+    }
+    .Portada_contenido{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: calc(100vh - 144px);
+    }
+    .Portada_msj{
+        color: white;
+        font-size: 1.3rem;
+        text-shadow: 3px 3px 2px rgba(46, 42, 42, 0.192);
+    }
+    .Portada_button_shop{
+
+        button{
+            background-color: transparent;
+            border-radius: 0px;
+            border: 3px solid white;
+            padding: 1rem 3rem;
+            bottom: 0%;
+        }
+    }
+    .Portada_radio{
+        input{
+            color: black;
+        }
+    }
+}

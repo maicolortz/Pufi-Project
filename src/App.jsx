@@ -1,9 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
-import './App.css'
+import './css/App.scss'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Principal from './components/Principal'
-
 function App() {
 
   return (
