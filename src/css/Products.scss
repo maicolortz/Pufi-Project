@@ -1,0 +1,64 @@
+$fondo_blanco:#FAFAFA;
+$negro_letra:#353535;
+@mixin img-rellena-50($img) {
+    width: 50vw;
+    height: 40vw;
+    background: url($img);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.productos_contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    margin: 0px auto;
+    .productos_item {
+        display: flex;
+        width: 100%;
+        .productos_item_detalle {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 50vw;    
+            height: 40vw;
+            background-color:$fondo_blanco;
+            color: $negro_letra;
+            h1{
+                font-size: 2rem;
+            }
+            img{
+                height: 150px;
+                width: max-content;
+            }
+        }
+        .producto_item_img {
+            opacity: 70%;
+        }
+    }
+    .productos_item:nth-child(2),.productos_item:nth-child(4){
+        flex-direction: row-reverse;
+    }
+    .productos_item:nth-child(1) {
+        .producto_item_img {
+            @include img-rellena-50("../images/sombrillas.webp")
+        }
+    }
+    .productos_item:nth-child(2) {
+        .producto_item_img {
+            @include img-rellena-50("../images/lagopuff.webp")
+        }
+    }
+    .productos_item:nth-child(3) {
+        .producto_item_img {
+            @include img-rellena-50("../images/puffi-cart.webp")
+            
+        }
+    }
+    .productos_item:nth-child(4) {
+        .producto_item_img {
+            @include img-rellena-50("../images/almohada.webp")
+        }
+    }
+}

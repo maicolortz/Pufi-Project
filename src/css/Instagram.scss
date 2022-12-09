@@ -1,0 +1,106 @@
+//variables
+$fondo_blanco: #FAFAFA;
+$negro_letra: #353535;
+
+.contenedor_instagram_newsletter {
+    background-color: $fondo_blanco;
+
+    .contenedor_instagram {
+        width: 100vw;
+        height: 100vh;
+        /* display: grid;
+    grid-template-columns: 2fr 3fr 2fr;
+    grid-template-rows: repeat(3, 1fr);
+ */
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+
+        .texto_instagram {
+            width: 100%;
+            height: 35%;
+            color: $negro_letra;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1 {
+                font-weight: 100;
+            }
+
+            h3 {
+                color: gray;
+            }
+
+            h1,
+            h3 {
+                text-align: center;
+                margin: 0%;
+                padding: 0%;
+            }
+        }
+
+        .imgs_instagram {
+            /*  grid-column: 2 / 3;
+        grid-row: 2 /4; */
+            height: 65%;
+            width: 43%;
+            gap: 2px;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr;
+
+            .imgs_instagram_item {
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+    .newsletter_contenedor {
+        color: $negro_letra;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        padding: 5rem;
+        .contenedor_input{
+            display: flex;
+            justify-content: center;
+            position: relative;
+            button{
+                position: absolute;
+                top: 0;
+                right:20vw;
+                background-color: transparent;
+                color: #353535;
+            }
+
+            input {
+                width: 50vw;
+                margin: 0 auto;
+                color: $negro_letra;
+                background-color: transparent;
+                font-size: large;
+                padding: 10px 2px;
+            }
+        }
+
+        h1 {
+            font-weight: 100;
+        }
+        h3 {
+            color: gray;
+        }
+        h3,
+        h1,
+        h4 {
+            text-align: center;
+            padding: 0%;
+            margin: 10px 2px;
+        }
+    }
+}

@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "./Navbar";
 import portada from "../images/playa-portada.webp";
 import Products from "./Products";
+import Instagram from "./Instagram";
+import Footer from "./Footer";
 Products;
 const Principal = () => {
   return (
@@ -25,6 +27,8 @@ const Principal = () => {
         </section>
       </div>
       <Products />
+      <Instagram/>
+      <Footer/>
     </div>
   );
 };
