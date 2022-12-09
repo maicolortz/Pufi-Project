@@ -1,15 +1,15 @@
 import React from "react";
 import "../css/Instagram.scss";
 import ContactForm from "./ContactForm";
+import sombrilla from "../images/sombrillas.webp"
+import lago from "../images/lagopuff.webp"
+import almohada from "../images/almohada.webp"
+import playa from "../images/pufi-playa.webp"
+import puffi from "../images/pufi-puff.webp"
+import puffinap from "../images/pufi-nap.webp"
 const Instagram = () => {
   const imagenes_instagram = [
-    "src/images/sombrillas.webp",
-    "src/images/lagopuff.webp",
-    "src/images/almohada.webp",
-    "src/images/pufi-playa.webp",
-    "src/images/pufi-puff.webp",
-    "src/images/pufi-nap.webp",
-  ];
+    sombrilla, lago,almohada,playa,puffi,puffinap ];
   const Img_instagram = ({ img }) => {
     return <img src={img} alt="imagen" />;
   };
@@ -30,12 +30,7 @@ const Instagram = () => {
           })}
         </div>
       </div>
-      {/* <div className="newsletter_contenedor">
-        <h3>NEWSLETTER</h3>
-        <h1>SUSCRIBETE</h1>
-        <h4>Y enterate de todas las novedades</h4>
-        <input placeholder="ingresa tu email" type={"email"} />
-      </div> */}
+     
       <ContactForm/>
     </div>
   );

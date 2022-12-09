@@ -1,5 +1,11 @@
 import React from "react";
 import "../css/Footer.scss";
+import facebook from "../images/iconos/facebook_logo.svg" 
+import instagram from"../images/iconos/instagram.svg" 
+import twitter from"../images/iconos/twitter_logo.svg" 
+import brandlive from "../images/iconos/brandlive.webp"
+import qr from "../images/iconos/qr.webp" 
+import seguridad from "../images/iconos/seguridad.svg" 
 const Footer = () => {
   return (
     <div className="footer">
@@ -29,8 +35,8 @@ const Footer = () => {
             <h4>COMPRA 100% SEGURA</h4>
           </div>
           <div>
-            <img src="src/images/iconos/qr.webp" alt="" />
-            <img src="src/images/iconos/seguridad.svg" alt="" />
+            <img src={qr}alt="" />
+            <img src={seguridad} alt="" />
 
             <h4>COMPRA CON <br/>LA GARANTIA DE<br/> PUFI</h4>
           
@@ -39,15 +45,15 @@ const Footer = () => {
         <div className="footer_info_redes">
         
           <h4>SEGUINOS EN </h4>
-          <img src="src/images/iconos/facebook_logo.svg" alt="" />
-          <img src="src/images/iconos/instagram.svg" alt="" />
-          <img src="src/images/iconos/twitter_logo.svg" alt="" />
+          <img src={facebook} alt="" />
+          <img src={instagram} alt="" />
+          <img src={twitter} alt="" />
       
         </div>
       </div>
       <div className="footer_derechos">
         <h4>PUFI Copright 2017 . Todos los derechos reservados</h4>
-        <img src="src/images/iconos/brandlive.webp"></img>
+        <img src={brandlive}></img>
       </div>
     </div>
   );
