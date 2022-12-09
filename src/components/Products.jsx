@@ -3,7 +3,6 @@ import playa_portada from "../images/playa-portada.webp";
 import almohada_fondo from "../images/almohada.webp";
 import lagopuff_fondo from "../images/lagopuff.webp";
 /* import bolso_puff from "../images/puff-bolso.webp" */
-import cart_puff from "../images/puffi-cart.webp";
 import pufi_puff from "../images/pufi-puff.webp";
 import sombrillas from "../images/sombrillas.webp";
 import bolso_puff from "../images/puff-bolso.webp";
